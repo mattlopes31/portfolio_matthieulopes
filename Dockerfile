@@ -2,15 +2,12 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Install deps first (better caching)
-COPY package.json package-lock.json ./
-RUN npm ci --omit=dev
+COPY package.json ./
+COPY package-lock.json ./
 
-# Copy app sources
+RUN npm install
+
 COPY . .
-
-ENV NODE_ENV=production
-ENV PORT=3000
 
 EXPOSE 3000
 

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="t d">
-  <title id="t">Aperçu tableau de synthèse E5</title>
-  <desc id="d">Placeholder : remplacez ce fichier par une capture PNG de votre tableau E5 si vous le souhaitez.</desc>
-  <rect width="900" height="420" fill="#050806"/>
-  <rect x="2" y="2" width="896" height="416" fill="none" stroke="#39ff14" stroke-opacity=".35" stroke-width="2"/>
-  <text x="450" y="200" fill="#39ff14" font-family="Consolas, 'Share Tech Mono', monospace" font-size="22" text-anchor="middle">TABLEAU DE SYNTHÈSE E5</text>
-  <text x="450" y="240" fill="#39ff14" font-family="Consolas, 'Share Tech Mono', monospace" font-size="14" text-anchor="middle" opacity=".85">Remplacez images/e5-synthese.svg par votre capture (PNG) si besoin</text>
-</svg>

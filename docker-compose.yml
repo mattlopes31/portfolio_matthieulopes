@@ -2,7 +2,7 @@ services:
   portfolio:
     build: .
     ports:
-      - "3000:3000"
+       - "127.0.0.1:${APP_PORT}:3000"
     environment:
       - PORT=3000
       # Optionnel: monte un dossier d'assets externe et indique son chemin.
