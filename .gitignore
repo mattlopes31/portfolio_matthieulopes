@@ -1,0 +1,28 @@
+## Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+## OS / Editor
+.DS_Store
+Thumbs.db
+
+## Env / secrets
+.env
+.env.*
+
+## Logs
+logs/
+*.log
+
+## Build outputs (si un jour tu en ajoutes)
+dist/
+build/
+.vite/
+
+## Cursor / VSCode
+.cursor/
+.vscode/
+

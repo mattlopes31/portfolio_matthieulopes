@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matthieu LOPES — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Bricolage+Grotesque:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">ML<span class="dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ══════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <canvas id="matrixCanvas" class="matrix-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-content">
+      <img
+        class="hero-photo reveal delay-1"
+        src="/cursor-assets/c__Users_papar_AppData_Roaming_Cursor_User_workspaceStorage_5eff85f9fe60e3fdb9bc3d4e281b309d_images_image-3907f5ab-7d1a-4220-97c4-5437438720c4.png"
+        alt="Photo de Matthieu"
+        loading="eager"
+      />
+      <p class="hero-eyebrow reveal">
+        <span class="eyebrow-dot"></span>
+        Bac+3 Développeur Full-Stack · EPSI Toulouse
+      </p>
+      <h1 class="hero-name reveal delay-1">
+        Matthieu<br><span class="stroke-text">LOPES</span>
+      </h1>
+      <p class="hero-desc reveal delay-2">
+        Développeur Full-Stack en <strong>Bac+3 à l'EPSI Toulouse</strong>, avec une approche complète du développement : interfaces, APIs, bases de données et sécurité.
+      </p>
+      <div class="hero-future reveal delay-3">
+        <span class="future-icon"></span>
+        <div>
+          <p class="future-label">Projet futur</p>
+          <p class="future-text">
+            Sur le plan professionnel, je souhaite m’orienter vers le métier de <strong>pilote ROV</strong>
+            (Remotely Operated Vehicle) dans l’industrie pétrolière offshore.
+            <br/><br/>
+            Afin d’atteindre cet objectif, je prévois de passer la <strong>certification BOSIET</strong> fin 2026,
+            puis de suivre une formation spécialisée en <strong>ROV trainer</strong> ou <strong>électronicien junior</strong>,
+            en fonction des opportunités.
+            <br/><br/>
+            L’acquisition de ces compétences techniques est essentielle pour travailler sur des plateformes
+            offshore et, à terme, accéder aux formations dédiées au pilotage de ROV.
+          </p>
+        </div>
+      </div>
+      <div class="hero-cta reveal delay-4">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="https://www.linkedin.com/in/matthieu-lopes-920165349/" target="_blank" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PARCOURS ══════════════════════ -->
+  <section id="parcours">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-label">Expériences & Formation</p>
+        <h2 class="section-title">Mon <span>Parcours</span></h2>
+        <a href="https://www.linkedin.com/in/matthieu-lopes-920165349/" target="_blank" class="linkedin-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Profil complet sur LinkedIn
+        </a>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-date">Sept. 2025 — Aujourd'hui</div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3>Développeur logiciels & IA</h3>
+                <p class="tcard-company">
+                  <img
+                    class="company-logo"
+                    src="/cursor-assets/c__Users_papar_AppData_Roaming_Cursor_User_workspaceStorage_5eff85f9fe60e3fdb9bc3d4e281b309d_images_image-8c1c54b3-408c-4725-bf82-21d169f37452.png"
+                    alt="Encosyst"
+                  />
+                  Encosyst · Alternance · Labarthe-Inard, Occitanie
+                </p>
+              </div>
+              <span class="tcard-badge current">En cours</span>
+            </div>
+            <ul class="tcard-missions">
+              <li>Développement d'applications web modernes avec React.js</li>
+              <li>Gestion de bases de données avec Prisma ORM et SQL</li>
+              <li>Développement de modèles en Python (Machine Learning)</li>
+              <li>Développement backend en PHP et Java</li>
+              <li>Automatisation de workflows avec n8n</li>
+              <li>Conception d'architectures logicielles et optimisation des performances</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>React.js</span><span>Python</span><span>Node.js</span><span>PostgreSQL</span>
+              <span>Prisma ORM</span><span>JWT</span><span>Docker</span><span>MLOps</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Mai 2025 — Juin 2025</div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3>Développeur logiciels</h3>
+                <p class="tcard-company">
+                  <img
+                    class="company-logo"
+                    src="/cursor-assets/c__Users_papar_AppData_Roaming_Cursor_User_workspaceStorage_5eff85f9fe60e3fdb9bc3d4e281b309d_images_image-109a6777-46ca-42cd-86d6-8a8771fb4fb5.png"
+                    alt="Prosoluce"
+                  />
+                  Prosoluce · Stage · Sur site
+                </p>
+              </div>
+              <span class="tcard-badge">Stage</span>
+            </div>
+            <ul class="tcard-missions">
+              <li>Développement d'applications web avec Laravel</li>
+              <li>Création d'interfaces dynamiques avec Vue.js</li>
+              <li>Maintenance et amélioration de projets existants</li>
+              <li>Travail en équipe sur fonctionnalités backend et frontend</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>Laravel</span><span>Vue.js</span><span>SQL</span><span>GitLab</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Juil. 2023 — Août 2023</div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3>Développeur web</h3>
+                <p class="tcard-company">
+                  <img
+                    class="company-logo"
+                    src="/cursor-assets/c__Users_papar_AppData_Roaming_Cursor_User_workspaceStorage_5eff85f9fe60e3fdb9bc3d4e281b309d_images_image-8c1c54b3-408c-4725-bf82-21d169f37452.png"
+                    alt="Encosyst"
+                  />
+                  Encosyst
+                </p>
+              </div>
+              <span class="tcard-badge">CDD</span>
+            </div>
+            <ul class="tcard-missions">
+              <li>Création de la base de données</li>
+              <li>Développement des fonctionnalités CRUD</li>
+              <li>Gestion des utilisateurs · Tests et débogage</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>PHP</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Juil. 2022 — Août 2022</div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <div>
+                <h3>Câbleur</h3>
+                <p class="tcard-company">
+                  <img
+                    class="company-logo"
+                    src="/cursor-assets/c__Users_papar_AppData_Roaming_Cursor_User_workspaceStorage_5eff85f9fe60e3fdb9bc3d4e281b309d_images_image-8c1c54b3-408c-4725-bf82-21d169f37452.png"
+                    alt="Encosyst"
+                  />
+                  Encosyst
+                </p>
+              </div>
+              <span class="tcard-badge">CDD</span>
+            </div>
+            <ul class="tcard-missions">
+              <li>Câblage d'armoires électriques</li>
+              <li>Lecture des schémas électriques</li>
+              <li>Montage, installation de composants</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ COMPÉTENCES ═══════════════════ -->
+  <section id="competences">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-label">Stack technique</p>
+        <h2 class="section-title">Mes <span>Compétences</span></h2>
+      </div>
+
+      <div class="skills-carousel reveal">
+        <div class="skills-viewport">
+          <div class="skills-grid" id="skillsTrack">
+
+            <!-- Langages -->
+            <div class="skills-block reveal">
+              <h3 class="skills-subtitle">
+                <span class="skills-icon">{ }</span> Langages
+              </h3>
+              <div class="skills-list">
+                <div class="skill-item" data-level="90">
+                  <span class="skill-name">TypeScript / JavaScript</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+                <div class="skill-item" data-level="80">
+                  <span class="skill-name">Python</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+            <div class="skill-item" data-level="50">
+                  <span class="skill-name">Java</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+            <div class="skill-item" data-level="35">
+                  <span class="skill-name">Kotlin</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+                <div class="skill-item" data-level="65">
+                  <span class="skill-name">PHP</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+                <div class="skill-item" data-level="85">
+                  <span class="skill-name">SQL</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="skills-block reveal delay-1">
+              <h3 class="skills-subtitle">
+                <span class="skills-icon">⬡</span> Frameworks
+              </h3>
+              <div class="skills-list">
+                <div class="skill-item" data-level="90">
+                  <span class="skill-name">Node.js / Express</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+                <div class="skill-item" data-level="85">
+                  <span class="skill-name">React.js</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+                <div class="skill-item" data-level="78">
+                  <span class="skill-name">Vue.js</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+                <div class="skill-item" data-level="75">
+                  <span class="skill-name">Laravel</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+                <div class="skill-item" data-level="82">
+                  <span class="skill-name">Prisma ORM</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+                <div class="skill-item" data-level="70">
+                  <span class="skill-name">FastAPI</span>
+                  <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outils & Environnement -->
+            <div class="skills-block reveal delay-2">
+              <h3 class="skills-subtitle">
+                <span class="skills-icon">⚙</span> Outils et Environnement
+              </h3>
+              <div class="skills-tags">
+                <span class="stag">Git / GitHub</span>
+                <span class="stag">Docker</span>
+                <span class="stag">PostgreSQL</span>
+                <span class="stag">MySQL</span>
+                <span class="stag">JWT / Auth</span>
+                <span class="stag">REST API</span>
+                <span class="stag">Vite</span>
+                <span class="stag">n8n</span>
+                <span class="stag">NAS</span>
+                <span class="stag">Linux</span>
+                <span class="stag">Postman</span>
+                <span class="stag">VS Code</span>
+                <span class="stag">IntelliJ</span>
+                <span class="stag">GitLab</span>
+                <span class="stag">API REST</span>
+                <span class="stag">n8n</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-controls">
+          <button class="skills-nav-btn" id="skillsPrev" aria-label="Compétence précédente">‹</button>
+          <div class="skills-dots" id="skillsDots">
+            <button class="skills-dot active" data-index="0" aria-label="Slide Langages"></button>
+            <button class="skills-dot" data-index="1" aria-label="Slide Frameworks"></button>
+            <button class="skills-dot" data-index="2" aria-label="Slide Outils"></button>
+          </div>
+          <button class="skills-nav-btn" id="skillsNext" aria-label="Compétence suivante">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJETS ═══════════════════════ -->
+  <section id="projets">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-label">Réalisations</p>
+        <h2 class="section-title">Mes <span>Projets</span></h2>
+        <p class="section-desc">Ces projets font partie de mon dossier professionnel <strong>BTS SIO SLAM (E5)</strong>.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal js-project-card" data-project-id="unityddt" data-repo="mattlopes31/UnityDDTAnalyzer" role="button" tabindex="0">
+          <div class="project-header">
+            <span class="project-num">01</span>
+            <div class="project-links">
+              <a href="https://github.com/mattlopes31/UnityDDTAnalyzer" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Convertisseur XSY → JSON<br><span>Automates industriels (DDT)</span></h3>
+          <p class="project-desc">Outil de conversion automatique de fichiers XSY en JSON formaté précisément pour les logiciels d'automates industriels. Filtrage des données et respect du format DDT strict.</p>
+          <div class="project-tags">
+            <span>Python</span><span>JSON</span><span>Parsing</span><span>GitHub</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-context">Encosyst · Alternance</span>
+            <span class="project-e5">📄 E5</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1 js-project-card" data-project-id="chronova" data-repo="mattlopes31/Chronova" role="button" tabindex="0">
+          <div class="project-header">
+            <span class="project-num">02</span>
+            <div class="project-links">
+              <a href="https://github.com/mattlopes31/Chronova" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Chronova<br><span>Application RH — Projets & Tâches</span></h3>
+          <p class="project-desc">Application web de gestion RH permettant aux managers de créer des projets, d'affecter des tâches aux salariés et à chacun de documenter ses réalisations. Auth JWT + RBAC.</p>
+          <div class="project-tags">
+            <span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-context">Encosyst · Alternance</span>
+            <span class="project-e5">📄 E5</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2 js-project-card" data-project-id="encosyst-website" data-repo="mattlopes31/EncosystWebsite-1" role="button" tabindex="0">
+          <div class="project-header">
+            <span class="project-num">03</span>
+            <div class="project-links">
+              <a href="https://github.com/mattlopes31/EncosystWebsite-1" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Encosyst Website<br><span>Site institutionnel multilingue</span></h3>
+          <p class="project-desc">Site web institutionnel d'Encosyst avec système de gestion multilingue (i18n) complet. Sélecteur de langue, persistance localStorage, animations CSS/JS.</p>
+          <div class="project-tags">
+            <span>HTML/CSS</span><span>JavaScript</span><span>i18n</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-context">Encosyst · Alternance</span>
+            <span class="project-e5">📄 E5</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3 js-project-card" data-project-id="inherit-api" data-repo="mattlopes31/Inherit" role="button" tabindex="0">
+          <div class="project-header">
+            <span class="project-num">04</span>
+            <div class="project-links">
+              <a href="https://github.com/mattlopes31/Inherit" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">API REST Sécurisée<br><span>Architecture professionnelle</span></h3>
+          <p class="project-desc">API REST complète en Node.js/TypeScript avec architecture en couches (controller/service/repository), auth JWT + refresh tokens, validation Zod et documentation Swagger.</p>
+          <div class="project-tags">
+            <span>Node.js</span><span>TypeScript</span><span>Express</span><span>JWT</span><span>Swagger</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-context">Projet personnel</span>
+            <span class="project-e5">📄 E5</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal js-project-card" data-project-id="rickandmorty" data-repo="mattlopes31/rickandMorty" role="button" tabindex="0">
+          <div class="project-header">
+            <span class="project-num">05</span>
+            <div class="project-links">
+              <a href="https://github.com/mattlopes31/rickandMorty" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">rickandMorty<br><span>Application web</span></h3>
+          <p class="project-desc">Projet inspiré de l'univers Rick and Morty, avec récupération et affichage dynamique de données via API.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>API</span><span>Frontend</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-context">Projet personnel</span>
+            <span class="project-e5">📄 E5</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1 js-project-card" data-project-id="street-bites" data-repo="mattlopes31/Street_bites" role="button" tabindex="0">
+          <div class="project-header">
+            <span class="project-num">06</span>
+            <div class="project-links">
+              <a href="https://github.com/mattlopes31/Street_bites" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Street_bites<br><span>Plateforme food & découverte</span></h3>
+          <p class="project-desc">Application orientée expérience utilisateur pour découvrir des adresses food, consulter des fiches et naviguer par catégories.</p>
+          <div class="project-tags">
+            <span>Node.js</span><span>Express</span><span>SQL</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-context">Projet personnel</span>
+            <span class="project-e5">📄 E5</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2 js-project-card" data-project-id="spotilike" data-repo="mattlopes31/Spotilike" role="button" tabindex="0">
+          <div class="project-header">
+            <span class="project-num">07</span>
+            <div class="project-links">
+              <a href="https://github.com/mattlopes31/Spotilike" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Spotilike<br><span>Recommandation musicale</span></h3>
+          <p class="project-desc">Projet centré sur la découverte musicale avec gestion de playlists, recommandations et interface moderne inspirée des apps de streaming.</p>
+          <div class="project-tags">
+            <span>TypeScript</span><span>API</span><span>PostgreSQL</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-context">Projet personnel</span>
+            <span class="project-e5">📄 E5</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3 js-project-card" data-project-id="calendar" data-repo="mattlopes31/Calendar" role="button" tabindex="0">
+          <div class="project-header">
+            <span class="project-num">08</span>
+            <div class="project-links">
+              <a href="https://github.com/mattlopes31/Calendar" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Calendar<br><span>Organisation & planification</span></h3>
+          <p class="project-desc">Application de planification avec gestion d'événements, vue calendrier et organisation des tâches au quotidien.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Frontend</span><span>PHP</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-context">Projet personnel</span>
+            <span class="project-e5">📄 E5</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="e5-banner reveal">
+        <div class="e5-banner-icon">📄</div>
+        <div>
+          <p class="e5-banner-title">Dossier Professionnel BTS SIO SLAM — Épreuve E5</p>
+          <p class="e5-banner-sub">Ces 4 réalisations sont détaillées dans mon dossier professionnel E5 avec tableau de synthèse des compétences.</p>
+          <img
+            src="/cursor-assets/c__Users_papar_AppData_Roaming_Cursor_User_workspaceStorage_5eff85f9fe60e3fdb9bc3d4e281b309d_images_image-bb8e32f6-aad2-4cb7-bd49-1b8b68099f99.png"
+            alt="Screen dossier professionnel BTS SIO SLAM"
+            class="e5-ref-table"
+            loading="lazy"
+          />
+        </div>
+        <a href="dossier_professionnel_E5_matthieu_lopes.pdf" target="_blank" class="btn btn-primary" id="e5PdfLink">Télécharger le dossier E5</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════ -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-label">Me contacter</p>
+        <h2 class="section-title">Prendre <span>Contact</span></h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="contact-text">Une question sur mon dossier, un projet ou une opportunité ? N'hésitez pas à me contacter.</p>
+          <div class="contact-socials">
+            <a href="https://github.com/mattlopes31" target="_blank" class="social-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/matthieu-lopes-920165349/" target="_blank" class="social-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:matthieu.lopes@epsi.fr" class="social-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal delay-1" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Envoyer le message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <p class="form-feedback" id="formFeedback"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">ML<span>.</span></p>
+      <p class="footer-copy">© 2025 Matthieu LOPES — BTS SIO SLAM · Candidat Libre</p>
+      <div class="footer-socials">
+        <a href="https://github.com/mattlopes31" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/matthieu-lopes-920165349/" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal-overlay" id="projectModalOverlay"></div>
+    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button class="project-modal-close" id="projectModalClose" aria-label="Fermer les détails">×</button>
+      <div class="project-modal-screen">
+        <p class="project-modal-kicker">Détails du projet</p>
+        <h3 id="projectModalTitle">Projet</h3>
+        <p class="project-modal-subtitle" id="projectModalSubtitle"></p>
+        <img id="projectModalImage" class="project-modal-image" alt="Aperçu du projet" loading="lazy" />
+        <p class="project-modal-desc" id="projectModalDesc"></p>
+        <ul class="project-modal-points" id="projectModalPoints"></ul>
+        <div class="project-modal-meta">
+          <p><strong>Stack :</strong> <span id="projectModalStack"></span></p>
+          <a id="projectModalRepoLink" target="_blank" rel="noopener noreferrer">Voir le repository GitHub</a>
+        </div>
+        <details class="project-modal-readme">
+          <summary>README du projet</summary>
+          <pre id="projectModalReadme">Chargement...</pre>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ TERMINAL GATE (ACCUEIL) ═══════════════════════════ -->
+  <div id="terminalGate" class="terminal-gate" role="dialog" aria-modal="true" aria-labelledby="terminalGateTitle">
+    <div class="terminal-box">
+      <div class="terminal-title" id="terminalGateTitle">PORTFOLIO_TERMINAL</div>
+      <div class="terminal-screen" id="terminalScreen">
+        <span id="terminalLines"></span><span class="terminal-cursor" aria-hidden="true">█</span>
+      </div>
+      <div id="terminalCountdown" class="terminal-countdown" aria-live="polite"></div>
+      <div class="terminal-controls">
+        <button id="terminalYes" class="terminal-btn" data-no-scramble="1" type="button">CLIQUER_ICI</button>
+        <button id="terminalNo" class="terminal-btn terminal-btn-secondary" data-no-scramble="1" type="button">NON</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="pacmanCanvas" class="pacman-canvas" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
