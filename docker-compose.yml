@@ -1,0 +1,13 @@
+services:
+  portfolio:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      # Optionnel: monte un dossier d'assets externe et indique son chemin.
+      # - CURSOR_ASSETS_DIR=/assets
+    # Optionnel:
+    # volumes:
+    #   - ./public:/app/public
+    restart: unless-stopped
